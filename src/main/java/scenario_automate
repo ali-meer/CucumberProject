@@ -1,0 +1,18 @@
+Launch the browser and hit the URL
+Click on Signin button
+Enter username
+Enter password
+Click on login button
+
+
+Concept:
+Cucumber plugin and jars to be entered.
+Feature file has to be added
+Inside Feature file we will use Scenario and Scenario Outline using Gherkin language(Given, When, And and Then)
+Converting Scenarios to Step Definition
+We will use tags
+Use of Hooks (@before and @after)
+Converting project into cucumber
+
+
+Use of page factory in pom framework

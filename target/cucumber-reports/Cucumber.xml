@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
+<testcase classname="Login functionality" name="Login to the Application" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given CtoK application is launched..........................................undefined
+When User Clicks on Signin button...........................................undefined
+And User Enters username "letmetest@hotmail.com"............................undefined
+And User Enters password "test123"..........................................undefined
+And User Clicks on login button.............................................undefined
+Then User validates the title of the page...................................undefined
+]]></failure>
+</testcase>
+</testsuite>

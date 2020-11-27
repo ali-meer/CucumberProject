@@ -8,11 +8,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class browserSetupMine {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
-
-
-    public void launchBrowser(String browsername, String baseURL) throws InterruptedException {
+    public static WebDriver launchBrowser(String browsername, String baseURL) throws InterruptedException {
         if(browsername.equalsIgnoreCase("Chrome")){
             System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
             driver = new ChromeDriver();
@@ -30,9 +28,7 @@ public class browserSetupMine {
         driver.manage().window().maximize();
         Thread.sleep(1000);
         driver.get(baseURL);
+
+        return driver;
     }
-
-
-
-
    }

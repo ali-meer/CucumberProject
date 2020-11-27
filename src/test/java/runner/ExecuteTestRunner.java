@@ -15,11 +15,11 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/java/feature",
-glue="testCaseExecution",
+glue= "testCaseExecution_stepDefinition",
 plugin = {"pretty","com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/ExtendedReport.html","junit:target/cucumber-reports/Cucumber.xml","html:target/cucumber-html-reports","json:target/cucumber-reports/cucumber.json","html:target/Cucumber-JVM-report"},
 monochrome =true //display the console output in a proper readable format
 ,strict=true //it will check if any step is not defined in step definition file
-,dryRun = true //to check the mapping is proper btw feature file and step defn file
+,dryRun = false //to check the mapping is proper btw feature file and step defn file
 ,tags = {"@LoginTest"}
 )
         

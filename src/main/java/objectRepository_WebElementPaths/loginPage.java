@@ -1,4 +1,4 @@
-package objectRepository;
+package objectRepository_WebElementPaths;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -46,6 +46,11 @@ public class loginPage {
 
     public void dropdownQuiz() throws InterruptedException {
         driver.findElement(By.xpath(dropdownQuiz)).click();
+        Thread.sleep(3000);
+    }
+    public void getTitle() throws InterruptedException {
+        String titlePage = driver.getTitle();
+        System.out.println(titlePage);
         Thread.sleep(3000);
     }
 
